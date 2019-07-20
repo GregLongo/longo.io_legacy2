@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Safeway_Prototype</title>
+
+    <!-- 
+
+
+                                                                                
+                                                                                
+                            ..............  ............                        
+                        ....:7ZZZZ$$O,.....=ZZZZZ7,.....                        
+                    ....O$ZZZZZ$Z7.......OZZZZZZZZZZZZ$.. .                     
+                  ...$ZZZZZZZZZ7..    ..ZZZZZZZZZZZZZZZZZ=...                   
+                  .+Z$ZZZZZZZZ....    .~ZZZZZZZZZZZZZZZZZZZ=..                  
+               ...ZZZZZZZZZZ$..       .$ZZZZZZZZZZZZZZZZZZZZZ..                 
+               ..ZZZZZZZZZZZ...       .ZZZZZZZZZZZZZZZZZZZZZZZ...               
+             ...ZZZZZZZZZZZ?..        .+ZZZZZZZZZZZZZZZZZZZZZZZ..               
+             ..ZZZZZZZZZZZZ..         ..ZZZZZZZZZZZZZZZZZZZZZZZZ.               
+             .~ZZZZZZZZZZZ$..           .$ZZZZZZZZZZZZZZZZZZZZZ$...             
+             .ZZZZZZZZZZZZZ..           ..OZZZZZZZZZZZZZZZZZZZZZZ..             
+            ..ZZZZZZZZZZZZZ..           ....OZZZZZZZZZZZZZZZZZZZZ..             
+           ...ZZZZZZZZZZZZZ,.             ....ZZZZZZZZZZZZZZZZZZ$..             
+           ..~ZZZZZZZZZZZZZZ.                ..=ZZZZZZZZZZZZZZZZZ,..            
+           ..+ZZZZZZZZZZZZZZ:.               ....ZZZZZZZZZZZZZZZ$:..            
+           ..+ZZZZZZZZZZZZZZZ,..               ...$ZZZZZZZZZZZZZZ:..            
+           ..+ZZZZZZZZZZZZZZZZ?...               ..7ZZZZZZZZZZZZ$:..            
+            .~ZZZZZZZZZZZZZZZZZZ....             ...OZZZZZZZZZZZZ, .            
+            .,ZZZZZZZZZZZZZZZZZZZ7..              ..:ZZZZZZZZZZZZ...            
+            ..$ZZZZZZZZZZZZZZZZZZZZ+..              .ZZZZZZZZZZZZ.              
+              ZZZZZZZZZZZZZZZZZZZZZZ$:..            .ZZZZZZZZZZZZ...            
+             .IZZZZZZZZZZZZZZZZZZZZZZZZ.            .ZZZZZZZZZZZ,...            
+             ..$ZZZZZZZZZZZZZZZZZZZZZZZO..          .$ZZZZZZZZZZ.               
+             ..:ZZZZZZZZZZZZZZZZZZZZZZZ$:..      ...=ZZZZZZZZZZ..               
+             ...+ZZZZZZZZZZZZZZZZZZZZZZZO.       ...ZZZZZZZZZZ:..               
+               ..,ZZZZZZZZZZZZZZZZZZZZZZO..     ...ZZZZZZZZZZ....               
+                 ..ZZZZZZZZZZZZZZZZZZZZZ?..    ...O$ZZZZZZZO...                 
+                  ..,$ZZZZZZZZZZZZZZZZ$Z........,Z$ZZZZZZ$...                   
+                    ...ZZZZZZZZZZZZZZZZ,   ...,ZZZZZZZZ7...                     
+                       ....?ZZZZ$ZZZZ~.....~OZZZZZO+....                        
+                          ............:::,,...........                          
+                           ..  .....  ...........   ..                          
+                                                                                
+                                                                   
+
+
+
+-->
+
+
+  <meta name="description" content="Prototype for Safeway site search">
+  
+  <meta name="viewport" content= " width=device-width, initial-scale=1.0">
+  <script src= "js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src= "js/bootstrap.js" type="text/javascript"></script>
+  <script src= "js/loggedin.js" type="text/javascript"></script>
+
+
+  <script src= "js/showmore.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Futura+Condensed' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Futura+Medium' rel='stylesheet' type='text/css'>
+
+  <link href="css/safeway.css" rel="stylesheet">
+  <link href="css/productdescription.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="media/img/apple-touch-icon_144X144.png"/>
+
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="content">
+<!-- Navbar-->
+<nav id="safeway-nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="index.html"><img id="logo" src="media/svg/safeway_v2.svg"></a>
+    </div>
+
+            <div class="nav navbar-nav navbar-right">
+        <li><a href="#"><img id="cart" src="media/img/cart.png"></a></li>
+        
+      </div>
+
+
+      <form class="navbar-form navbar-right">
+
+        <div class="form-group">
+          <input type="text" id="searchbox" class="form-control" placeholder="Search">
+        
+        <button  class="my-btn "><img id="search" src="media/img/search.png"></button>
+        </div>
+      </form>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="menu-item" href="#">Menu Item 1</a></li>
+        <li><a class="menu-item" href="#">Menu Item 2</a></li>
+        <li><a class="menu-item" href="#">Menu Item 3</a></li>
+        
+      </ul>
+  </div>
+</nav>
+
+
+<div id="product-desc" class="container">
+  <div id="myproduct" class="col-sm-6">
+
+  
+<!--hide me to reveal options-->
+  <a href="index.html" class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <img  class="apple" src="media/img/apple_gold.png">
+      </div>
+
+      <div class="thing col-sm-12">
+      <span class="product-title" >Organic Golden Apple</span>
+      </div>
+      <div class="thing col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+      <div class="thing col-sm-12">
+        <a href="" class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+
+      <div class="thing col-sm-12">
+
+          <div class="qty-ctnr col-sm-6">
+           <p class="qty-text"> Qty</p>
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="buy-button"> Add to Cart </div>
+      </div>
+          </div>
+      </div>
+
+  </div>
+  <div id="myinfo" class="col-sm-6">
+    
+    <div class="infocard container">
+    <div class="row more-header">
+      Description
+    </div>
+    <div class="more row">
+      Nisum Farms Organic Golden Apple
+    </div>
+    </div>
+
+    <br>
+
+    <div class="infocard container">
+    <div class="row more-header">
+      Details
+    </div>
+    <div class="more row">
+      Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.
+    </div>
+    </div>
+    <br>
+    <div class="infocard container">
+    <div class="row more-header">
+      Nutrition
+    </div>
+    <div class="more row">
+      Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa. In hac  platea dictumst. Integer tristique leo consectetur libero pretium pretium. Nunc sed mauris magna. Praesent varius purus id turpis iaculis iaculis. Nulla <em>convallis magna nunc</em>, id rhoncus massa ornare in. Donec et feugiat sem, ac rhoncus mauris. Quisque eget tempor massa.
+    </div>
+    </div>
+
+
+</div>
+
+
+  </div>
+
+
+
+
+<div id="banner"class="row">
+
+    <div class="bannertext">This is a Banner</div>
+
+  </div>
+
+<div class="row">
+
+    <div class="shelftext">More From This Shelf:</div>
+
+  </div>
+
+
+
+<div id ="similar-items" class="carousel slide" data-ride="carousel">
+
+  <div  class="carousel-inner">
+    <div class="item active">
+    <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_gala.png" alt="...">
+      <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_green.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_shizuka.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="item">
+    <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img  src="media/img/apple_pink.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_shizuka.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_red_del.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="item">
+    <div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_red.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_honey.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <img src="media/img/apple_green.png" alt="...">
+            <div class="row">
+      <a class="similar-title" href="" >Apple</a>
+      </div>
+    </div>
+
+    </div>
+    </div>
+  </div>
+ 
+  <a class="left carousel-control" href="#similar-items" role="button" data-slide="prev">
+    <span class="chev"> < </span>
+  </a>
+  <a class="right carousel-control" href="#similar-items" role="button" data-slide="next">
+    <span class="chev" > > </span>
+  </a>
+</div> 
+
+</div>
+<!--Footer-->
+
+<div class="footer">
+  <div class="row" id="footer-row">
+    <div id="footer-container" class="container page-container">
+      <div class="col-xs-3" id="footer-text">
+       &#169 2016 Greg Longo
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

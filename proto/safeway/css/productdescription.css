@@ -1,0 +1,316 @@
+body{
+	background-color: white;
+	padding-top: 70px;
+}
+
+
+.apple{
+
+	height: 350px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+		margin-top: 10px;
+		margin-left: 100px;
+
+
+
+}
+
+.apple-container{
+
+		padding: 0px;
+		position: absolute;
+		text-align: right;
+		width: 450px;
+
+}
+
+.product-title{
+	
+	font-weight: bold;
+	font-size: 24pt;
+	color: #636363;
+	text-decoration: none;
+	margin-bottom: 10px !important;
+
+
+}
+
+.product-price{
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 20pt;
+	color: #E03A3F;
+	text-decoration: none;	
+	padding-top: 200px !important;
+
+
+}
+
+.each{
+
+	font-family: futura-medium;
+		font-size: 14pt;
+			color: grey;
+
+}
+
+.buy-button{
+
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 20pt;
+	color: white;
+	background-color: #E03A3F;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+	margin-right: -15px;
+
+	padding-right: 15px;
+
+}
+
+.qty-ctnr{
+
+	margin-top: 20px;
+
+}
+
+.qty-text{
+
+	color: #E03A3F;
+		display: inline-block;
+
+
+}
+
+.qty{
+
+	background: transparent;
+	border-width: 2px;
+	border-color: #E03A3F;
+	color: #E03A3F;
+	padding-top: 2px;
+	padding-bottom: 2px;
+		display: inline;
+
+}
+
+
+
+.caret{
+	margin-left: 10px !important;
+	color: #E03A3F;
+
+}
+
+.qty:hover{
+
+		background: #E03A3F;;
+		color: white;
+		border-color: #E03A3F;
+
+
+}
+
+.qty:hover .caret{
+
+		color: white;
+}
+
+.personal-shopper a{
+
+	margin-top: 40px !important;
+	margin-bottom: 40px !important;
+
+}
+
+
+.thing{
+
+	margin-top: 10px;
+}
+
+.hideme{
+
+	height: 50px;
+	width: 205px;
+	background-color: white;
+	border-color: #E03A3F;
+	border-width: 3px;
+	z-index: 100;
+	position: absolute;
+	top: 540px;
+	left: 245px;
+	font-size: 20pt;
+	padding: 5px;
+}
+
+
+.hidemetoo{
+
+	height: 105px;
+	width: 315px;
+	background-color: white;
+	z-index: 99;
+	position: absolute;
+	top: 500px;
+	left: 140px;
+	padding: 5px;
+}
+
+
+
+
+#myinfo{
+
+	padding-top: 65px;
+		padding-right: 95px;
+
+
+
+}
+
+
+.infocard{
+
+	box-shadow: 1px 1px 2px #999;
+
+	border-radius:  10px;
+
+
+}
+
+.more{
+
+	padding-right: 40px;
+		padding-left: 40px;
+		padding-bottom: 10px;
+		text-align: right;
+
+}
+
+.morecontent span {
+    display: none;
+
+}
+
+.morelink {
+    display: block;
+
+    text-align: right;
+    font-size: 24pt;
+    color: #E03A3F;
+}
+.morelink:hover {
+
+	text-decoration: none;
+	    color: #E03A3F;
+
+}
+
+.morelink:focus {
+
+	text-decoration: none;
+	    color: #E03A3F;
+
+}
+
+
+.more-header{
+
+		font-family: futura-medium;
+	font-weight: bold;
+	font-size: 16pt;
+	text-align: right;
+	background-color: #E03A3F;
+	color: white; 
+padding:10px;
+padding-right: 40px;
+margin-bottom: 25px;
+border-radius: 5px 5px 0px 0px;
+}
+
+#banner{
+
+  background: url('../media/img/banner3.jpeg');
+  height:175px;
+  margin-top:100px;
+  margin-bottom:100px;
+    background-size: cover;
+  background-position: center top;
+
+
+}
+
+
+.bannertext{
+
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 24pt;
+	text-align: center;
+	color: white; 
+	margin-top: 70px;
+}
+
+.shelftext{
+
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 20pt;
+	text-align: center;
+	color: #E03A3F; 
+	margin-bottom: 100px;
+
+}
+
+
+#similar-items{
+
+	margin-bottom: 100px;
+	text-align: center;
+
+}
+
+#similar-items img{
+
+	height: 200px;
+	margin-left: -350px;
+
+}
+
+.similar-title{
+	
+	font-weight: bold;
+	font-size: 14pt;
+	color: #636363;
+	text-decoration: none;
+	margin-bottom: 50px !important;
+
+	margin-left: -350px;
+
+}
+
+.carousel-inner{
+
+
+}
+
+
+.carousel-control{
+
+	background-image: none !important;
+		padding-top: 30px !important ;
+		text-shadow: none;
+
+}
+
+.chev{
+
+	font-size: 48pt;
+	color: #E03A3F;
+
+
+}

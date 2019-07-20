@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Safeway_Prototype</title>
+
+    <!-- 
+
+
+                                                                                
+                                                                                
+                            ..............  ............                        
+                        ....:7ZZZZ$$O,.....=ZZZZZ7,.....                        
+                    ....O$ZZZZZ$Z7.......OZZZZZZZZZZZZ$.. .                     
+                  ...$ZZZZZZZZZ7..    ..ZZZZZZZZZZZZZZZZZ=...                   
+                  .+Z$ZZZZZZZZ....    .~ZZZZZZZZZZZZZZZZZZZ=..                  
+               ...ZZZZZZZZZZ$..       .$ZZZZZZZZZZZZZZZZZZZZZ..                 
+               ..ZZZZZZZZZZZ...       .ZZZZZZZZZZZZZZZZZZZZZZZ...               
+             ...ZZZZZZZZZZZ?..        .+ZZZZZZZZZZZZZZZZZZZZZZZ..               
+             ..ZZZZZZZZZZZZ..         ..ZZZZZZZZZZZZZZZZZZZZZZZZ.               
+             .~ZZZZZZZZZZZ$..           .$ZZZZZZZZZZZZZZZZZZZZZ$...             
+             .ZZZZZZZZZZZZZ..           ..OZZZZZZZZZZZZZZZZZZZZZZ..             
+            ..ZZZZZZZZZZZZZ..           ....OZZZZZZZZZZZZZZZZZZZZ..             
+           ...ZZZZZZZZZZZZZ,.             ....ZZZZZZZZZZZZZZZZZZ$..             
+           ..~ZZZZZZZZZZZZZZ.                ..=ZZZZZZZZZZZZZZZZZ,..            
+           ..+ZZZZZZZZZZZZZZ:.               ....ZZZZZZZZZZZZZZZ$:..            
+           ..+ZZZZZZZZZZZZZZZ,..               ...$ZZZZZZZZZZZZZZ:..            
+           ..+ZZZZZZZZZZZZZZZZ?...               ..7ZZZZZZZZZZZZ$:..            
+            .~ZZZZZZZZZZZZZZZZZZ....             ...OZZZZZZZZZZZZ, .            
+            .,ZZZZZZZZZZZZZZZZZZZ7..              ..:ZZZZZZZZZZZZ...            
+            ..$ZZZZZZZZZZZZZZZZZZZZ+..              .ZZZZZZZZZZZZ.              
+              ZZZZZZZZZZZZZZZZZZZZZZ$:..            .ZZZZZZZZZZZZ...            
+             .IZZZZZZZZZZZZZZZZZZZZZZZZ.            .ZZZZZZZZZZZ,...            
+             ..$ZZZZZZZZZZZZZZZZZZZZZZZO..          .$ZZZZZZZZZZ.               
+             ..:ZZZZZZZZZZZZZZZZZZZZZZZ$:..      ...=ZZZZZZZZZZ..               
+             ...+ZZZZZZZZZZZZZZZZZZZZZZZO.       ...ZZZZZZZZZZ:..               
+               ..,ZZZZZZZZZZZZZZZZZZZZZZO..     ...ZZZZZZZZZZ....               
+                 ..ZZZZZZZZZZZZZZZZZZZZZ?..    ...O$ZZZZZZZO...                 
+                  ..,$ZZZZZZZZZZZZZZZZ$Z........,Z$ZZZZZZ$...                   
+                    ...ZZZZZZZZZZZZZZZZ,   ...,ZZZZZZZZ7...                     
+                       ....?ZZZZ$ZZZZ~.....~OZZZZZO+....                        
+                          ............:::,,...........                          
+                           ..  .....  ...........   ..                          
+                                                                                
+                                                                   
+
+
+
+-->
+
+
+  <meta name="description" content="Prototype for Safeway site search">
+  
+  <meta name="viewport" content= " width=device-width, initial-scale=1.0">
+  <script src= "js/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src= "js/bootstrap.js" type="text/javascript"></script>
+  <script src= "js/login.js" type="text/javascript"></script>
+
+
+  <script src= "js/offcanvas.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Futura+Condensed' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Futura+Medium' rel='stylesheet' type='text/css'>
+
+  <link href="css/safeway.css" rel="stylesheet">
+  <link href="css/searchpage.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="media/img/apple-touch-icon_144X144.png"/>
+
+
+
+</head>
+
+<body>
+<!-- Navbar-->
+<div class="wrapper">
+<div class="content">
+<nav id="safeway-nav" class="navbar navbar-default navbar-fixed-top ">
+  <div class="container">
+
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="#"><img id="logo" src="media/svg/safeway_v2.svg"></a>
+    </div>
+
+            <div class="nav navbar-nav navbar-right">
+        <li><a href="#"><img id="cart" src="media/img/cart.png"></a></li>
+        
+      </div>
+
+
+      <form class="navbar-form navbar-right">
+
+        <div class="form-group">
+          <input type="text" id="searchbox" class="form-control" placeholder="Search">
+        
+        <button  class="my-btn "><img id="search" src="media/img/search.png"></button>
+        </div>
+      </form>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="menu-item" href="#">Menu Item 1</a></li>
+        <li><a class="menu-item" href="#">Menu Item 2</a></li>
+        <li><a class="menu-item" href="#">Menu Item 3</a></li>
+        
+      </ul>
+      </div>
+</nav>
+
+<!-- search-->
+
+    <div id="search-hero">
+    <div class="container">
+
+  
+
+      <div class="row search">
+        <div class="col-sm-8 col-sm-offset-2">
+
+          <div class="main-text"> What can we help you find?</div>
+
+          <form role="form">
+            <div class="input-group">
+              <input id="product-search" type="text" class="form-control" placeholder="Apples" readonly >
+              <span class="input-group-btn">
+              <a href="searchresults.html"><img id="main_search" src="media/img/search_white.png"></a>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+      </div>
+
+    </div>
+
+
+  <!-- otherstuff-->
+<div class="container">
+<div class="row">
+
+<div id="banners" class= "col-sm-6">
+
+  <a href="#"><div id= "banner"class="row">
+
+    <div class="bannertext">See What's On Sale!</div>
+
+  </div></a>
+
+  <a href="#"><div id= "browse" class="row" >
+
+    <div class="bannertext">Browse By Shelf</div>
+
+  </div></a>
+
+</div>
+
+
+
+<div id="login" class= "col-sm-6">
+<div id="login-success">
+
+  <div id= "welcome-text"> Welcome Back, Jane</div>
+  <div class="login-button"> View My Cart</div><br><br><br>
+  <div class="login-button"> Shop by History</div>
+
+</div>
+  <div id = "login-header" class="row">
+    Your Account
+  </div>
+
+
+                  <div class="login-form form-group">
+                              <img id="userimage" src="media/img/email.png">
+                    <input  read-only class="form-control" id="username" placeholder="Jane_Smith" readonly>
+                </div>
+                <div class="login-form form-group">
+                            <img id="userimage" src="media/img/key.png">
+
+                    <input  class="form-control" id="pwd" placeholder="******" readonly>
+                </div>
+
+
+
+      <div id = "login-buttons" class="row">
+              <div onclick="logged()" class="login-button"> Log In</div>
+
+              or
+
+              <div class="login-button"> Register</div>
+
+  </div>
+
+      <div id = "login-remember" class="row">
+      <form action="">
+          <input type="checkbox" id="remember" >Remember Me
+      </form>
+  </div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+ <div class="push"></div>
+
+</div>
+<!--Footer-->
+
+<div  class="footer">
+  <div class="row" id="footer-row">
+    <div id="footer-container" class="container page-container">
+      <div class="col-xs-3" id="footer-text">
+       &#169 2016 Greg Longo
+     </div>
+     
+  </div>
+</div>
+</div>
+
+</body>
+</html>

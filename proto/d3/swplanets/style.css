@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body{
+	background: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");
+	
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.line {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 4px;
+}
+
+#graph svg {
+		display: block;
+		overflow: visible;
+		margin-top: 100px;
+		margin-left: 400px;
+}
+
+.dot{
+	fill: gold;
+	cursor: pointer;
+
+}
+
+.axis, .axis path{
+	stroke: gold;
+}
+
+.label {
+	fill: gold;
+}

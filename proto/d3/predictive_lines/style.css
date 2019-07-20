@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500');
+
+html{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+	padding-top: 48px;
+	min-width: 1200px;
+}
+
+#graph{
+	margin-left: 48px;
+	display: inline-block;
+	height: 100%;
+}
+
+.line {
+	fill: none;
+}
+
+.line path, .line line{
+	stroke-width: 1px;
+}
+
+.priorityline{
+	fill: none;
+	stroke:  lightgrey ;
+	stroke-width: 2px;
+	stroke-dasharray: 5px;
+}
+
+.xaxis path{
+	stroke-width: 2px;
+}
+.xaxis path, .xaxis1 line{
+	stroke: #b7b7b7;
+}
+.xaxis .tick text{
+	font-size: 14px;
+	fill:#b7b7b7;
+}
+.xaxis .tick line{
+	stroke: #b7b7b7;
+	stroke-width: 2px;
+}
+
+.yaxis path{
+	stroke-width: 2px;
+}
+.yaxis1 path, .yaxis1 line{
+	stroke:#085C9B;
+}
+.yaxis2 path, .yaxis2 line{
+	stroke:#022BC1;
+}
+.yaxis3 path, .yaxis3 line{
+	stroke:#3B1B99;
+}
+
+.yaxis .tick text{
+	font-size: 14px;
+}
+.yaxis1 .tick text{
+	fill:#085C9B;
+}
+.yaxis2 .tick text{
+	fill:#022BC1;
+}
+.yaxis3 .tick text{
+	fill:#3B1B99;
+}
+
+.yaxis .tick line{
+	stroke-width: 2px;
+}
+
+.yaxislevel path, .yaxislevel line{
+	display: none;
+}
+
+.yaxislevel .tick:nth-child(2){
+	display: none;
+}
+
+.ylabel{
+	font-size: 14px;
+}
+
+.linelabel text, .alllabel {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.area{
+	pointer-events: none;
+}
+
+.graphs{
+	isolation: isolate;
+}
+
+.reserve-line{
+	stroke: #626B87;
+	fill:none;
+	stroke-width:1px;
+}
+
+.reserve-area{
+	fill: #626B87;
+	opacity: .2;
+	pointer-events: none;
+}
+
+.r-text{
+	font-size: 12px;
+	fill: #626B87;
+}
+
+#graph .maingraph {
+	width: 960px;
+	margin-left: 100px;
+	display: block;
+	cursor: ew-resize;
+	overflow: visible;
+	margin-top: 80px;
+}
+
+.legend {
+	overflow: visible;
+	height: 200px;
+	width: 480px;
+}
+
+.popup{
+	pointer-events: none;
+	cursor: ew-resize;
+	opacity: 1;
+}
+
+#focus text{
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.dayhat{
+	cursor: ew-resize;
+}
+
+.selected-value, .selected-score, .selected-date,.selected-caldate{
+	font-size: 12px;
+	pointer-events: none;
+	fill: white;
+}
+
+.tooltip{
+	opacity: .97;
+	pointer-events: none;
+}
+
+.x-line{
+	stroke-width: 2px;
+	stroke: #B7B7B7;
+	opacity: 1;
+}
+
+.dot{
+	fill: red;
+}
+
+.button{
+	cursor: pointer
+}
+
+.bacon-line{
+	stroke: lightgrey;
+	stroke-width: 1;
+}
+
+#today{
+	pointer-events: none;
+}
+
+#today text{
+	font-size: 13px;
+	font-weight:500;
+}
+.todayflag{
+	font-weight:300 !important;
+}
+
+.today-line{
+	stroke-width: 3px;
+	stroke: #A5A5A5;
+}
+
+.today-rect{
+	fill: #383838;
+}
+
+.scoreflag{
+	pointer-events: none;
+}
+
+.scoreflag-text{
+	fill: white;
+	font-size: 12px;
+}
+
+.clickme-text{
+	fill: white;
+	font-size: 12px;
+}
+
+#graph svg, #graph2, #graph5{
+	filter: drop-shadow( 2px 2px 2px rgba(0,0,0,.15) );
+}
+
+.tooltip svg rect{
+	stroke:darkgrey;
+}
+
+#graph5{
+	width: fit-content;
+	margin-left: 188px;
+	margin-bottom: 128px;
+	margin-top:  64px;
+	text-align: center;
+	white-space: pre-line;
+}
+
+#graph2 svg {
+	overflow: visible;
+	margin-left: 148px;
+	display: block;
+	box-shadow: none !important;
+}
+
+.sevline{
+	stroke-width: 1px;
+	stroke-dasharray: 3px;
+	opacity: .9;
+}
+
+/*delta view stuff */
+
+.deltalabel{
+
+	font-size: 22px;
+}
+
+tbody {
+	height: 209px;
+	overflow-y: scroll;
+	display:block;
+}
+
+thead{
+	display: block;
+}
+
+thead tr{
+	height: 36px;
+}
+
+h1 {
+	font: 16px sans-serif;
+	text-decoration: underline;
+}
+
+table div {
+	height: 36px;
+}
+
+div.container1 {
+	float: left;
+	width: 50%;
+}
+
+div.container2{
+	float: left;
+	width: 50%;
+}
+div.negative1 {
+	background-color: crimson;
+	vertical-align: middle;
+	margin-top: 14%;
+}
+
+div.positive1 {
+	float: right;
+	background-color: #30b530;
+	margin-top: 14%;
+}
+
+div.positive2 {
+	float: right;
+	background-color: #30b530;
+	margin-top: 14%;
+}
+
+div.negative2 {
+	background-color: crimson;
+	margin-top: 14%;
+}
+
+table {
+	font: 14px sans-serif;
+	vertical-align: middle;
+	text-align: center;
+	border-collapse: collapse;
+	background-color: #E6E6E6;
+	color: #393A3A;
+	margin-top: 16px;
+
+}
+
+td,th {
+	width:140px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: solid 2px #c1c1c1;
+}
+
+td{
+	border-left: solid 2px #F4F4F4 ;
+
+}
+
+th{
+	border-left: solid 2px #B3B3B3 ;
+}
+
+th:last-child {
+	width: 160px;
+}
+
+td.value {
+	text-align: center;
+}
+
+.header{
+	background-color: #8f8f8f;
+	border-bottom: none;
+	color: #E9E9E9;
+	font-weight: normal;
+}

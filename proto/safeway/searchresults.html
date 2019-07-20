@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Safeway_Prototype</title>
+
+    <!-- 
+
+
+                                                                                
+                                                                                
+                            ..............  ............                        
+                        ....:7ZZZZ$$O,.....=ZZZZZ7,.....                        
+                    ....O$ZZZZZ$Z7.......OZZZZZZZZZZZZ$.. .                     
+                  ...$ZZZZZZZZZ7..    ..ZZZZZZZZZZZZZZZZZ=...                   
+                  .+Z$ZZZZZZZZ....    .~ZZZZZZZZZZZZZZZZZZZ=..                  
+               ...ZZZZZZZZZZ$..       .$ZZZZZZZZZZZZZZZZZZZZZ..                 
+               ..ZZZZZZZZZZZ...       .ZZZZZZZZZZZZZZZZZZZZZZZ...               
+             ...ZZZZZZZZZZZ?..        .+ZZZZZZZZZZZZZZZZZZZZZZZ..               
+             ..ZZZZZZZZZZZZ..         ..ZZZZZZZZZZZZZZZZZZZZZZZZ.               
+             .~ZZZZZZZZZZZ$..           .$ZZZZZZZZZZZZZZZZZZZZZ$...             
+             .ZZZZZZZZZZZZZ..           ..OZZZZZZZZZZZZZZZZZZZZZZ..             
+            ..ZZZZZZZZZZZZZ..           ....OZZZZZZZZZZZZZZZZZZZZ..             
+           ...ZZZZZZZZZZZZZ,.             ....ZZZZZZZZZZZZZZZZZZ$..             
+           ..~ZZZZZZZZZZZZZZ.                ..=ZZZZZZZZZZZZZZZZZ,..            
+           ..+ZZZZZZZZZZZZZZ:.               ....ZZZZZZZZZZZZZZZ$:..            
+           ..+ZZZZZZZZZZZZZZZ,..               ...$ZZZZZZZZZZZZZZ:..            
+           ..+ZZZZZZZZZZZZZZZZ?...               ..7ZZZZZZZZZZZZ$:..            
+            .~ZZZZZZZZZZZZZZZZZZ....             ...OZZZZZZZZZZZZ, .            
+            .,ZZZZZZZZZZZZZZZZZZZ7..              ..:ZZZZZZZZZZZZ...            
+            ..$ZZZZZZZZZZZZZZZZZZZZ+..              .ZZZZZZZZZZZZ.              
+              ZZZZZZZZZZZZZZZZZZZZZZ$:..            .ZZZZZZZZZZZZ...            
+             .IZZZZZZZZZZZZZZZZZZZZZZZZ.            .ZZZZZZZZZZZ,...            
+             ..$ZZZZZZZZZZZZZZZZZZZZZZZO..          .$ZZZZZZZZZZ.               
+             ..:ZZZZZZZZZZZZZZZZZZZZZZZ$:..      ...=ZZZZZZZZZZ..               
+             ...+ZZZZZZZZZZZZZZZZZZZZZZZO.       ...ZZZZZZZZZZ:..               
+               ..,ZZZZZZZZZZZZZZZZZZZZZZO..     ...ZZZZZZZZZZ....               
+                 ..ZZZZZZZZZZZZZZZZZZZZZ?..    ...O$ZZZZZZZO...                 
+                  ..,$ZZZZZZZZZZZZZZZZ$Z........,Z$ZZZZZZ$...                   
+                    ...ZZZZZZZZZZZZZZZZ,   ...,ZZZZZZZZ7...                     
+                       ....?ZZZZ$ZZZZ~.....~OZZZZZO+....                        
+                          ............:::,,...........                          
+                           ..  .....  ...........   ..                          
+                                                                                
+                                                                   
+
+
+
+-->
+
+
+  <meta name="description" content="Prototype for Safeway site search">
+  
+  <meta name="viewport" content= " width=device-width, initial-scale=1.0">
+  <script src= "js/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+  <script src= "js/bootstrap.js" type="text/javascript"></script>
+  <script src= "js/loggedin.js" type="text/javascript"></script>
+  <script src= "js/quickview.js" type="text/javascript"></script>
+
+
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Futura+Condensed' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Futura+Medium' rel='stylesheet' type='text/css'>
+
+  <link href="css/safeway.css" rel="stylesheet">
+  <link href="css/searchresults.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="media/img/apple-touch-icon_144X144.png"/>
+
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="content">
+<!-- Navbar-->
+<nav id="safeway-nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="index.html"><img id="logo" src="media/svg/safeway_v2.svg"></a>
+    </div>
+
+            <div class="nav navbar-nav navbar-right">
+        <li><a href="#"><img id="cart" src="media/img/cart.png"></a></li>
+        
+      </div>
+
+
+      <form class="navbar-form navbar-right">
+
+        <div class="form-group">
+          <input type="text" id="searchbox" class="form-control" placeholder="Search">
+        
+        <button  class="my-btn "><img id="search" src="media/img/search.png"></button>
+        </div>
+      </form>
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="menu-item" href="#">Menu Item 1</a></li>
+        <li><a class="menu-item" href="#">Menu Item 2</a></li>
+        <li><a class="menu-item" href="#">Menu Item 3</a></li>
+        
+      </ul>
+  </div>
+</nav>
+
+<div id="allthethings"  class="container-fluid">
+
+<div id="filter-menu" class="col-sm-2 pull-left">
+
+<div id="sidebar-header">
+    Product Search
+</div>
+<hr>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default my-panel">
+    <div class="panel-heading my-heading">
+      <h4 class="panel-title">
+        <a class="selected" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Matches by Shelf</a>
+      </h4>
+    </div>
+
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div id="panel" class="panel-body">
+      <ul class="filters">
+      <div data-toggle="collapse" data-target="#demo"><li class="selected">Produce</li></div>
+      <div id="demo" class="collapse in">
+      <ul class="filters">
+        <li>Fruits</li>
+        <li class="selected">Organic Fruits</li>
+      </ul>
+  </div>
+      <li>Juice</li>
+      <li>Bakery</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="panel panel-default my-panel" >
+    <div class=" panel-heading my-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Matches by Brand</a> 
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div id="panel" class="panel-body">
+      <ul class="filters">
+      <li>Brand x</li>
+      <li>Brand y</li>
+      <li>Brand z</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+   <div class="row results-header">
+   <span id="yousearchedfor">Search Results for "Apples"</span>
+  </div>
+
+  <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content container">
+        <div class="row more-header">
+      Product Quickview
+    </div>
+      <div class="col-sm-5">
+     <a href="productdescription.html" ><img  class="quick-apple" src="media/img/apple_gold.png"></a>
+     </div>
+      <div class="modal-info  col-sm-7">
+
+      <div class="row">
+      <a href="productdescription.html" ><span class="modal-title" >Organic Golden Apple</span></a>
+      </div>
+      <div class="row">
+      <span class="modal-price" >$0.75</span><span class="modal-each">each</span>
+      </div>
+
+
+     <div class="infocard container">
+    <div class="row more-header">
+      Description
+    </div>
+    <div class=" stuff row">
+      Nisum Farms Organic Golden Apple
+    </div>
+
+    <div class="row more-header details-header">
+      Details
+    </div>
+    <div class="stuff row">
+      Morbi placerat imperdiet risus quis blandit. Ut lobortis elit luctus, feugiat erat vitae, interdum diam. Nam sit amet arcu vitae justo lacinia ultricies nec eget tellus. Curabitur id sapien massa.
+    </div>
+
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="results" class="col-sm-9 pull-right">
+
+
+  <div class="row">
+  <div id="product-1" class="product col-sm-3">
+  
+  <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div id="first-apple" class="col-sm-12">
+      <a href="productdescription.html" ><img  class="apple" src="media/img/apple_gold.png"></a>
+
+      <a class="quickview" data-toggle="modal" href=".modal"><img height="25px" src="media/img/quick.png"></a>
+
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" href="productdescription.html" >Organic Golden Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper" onClick="readCookie()"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="product-2" class="product col-sm-3">
+    
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_gala.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="product-3" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_green.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+
+  </div>
+  <div id="product-4" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_pink.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+  <div id="product-5" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_red.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+  <div id="product-6" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_shizuka.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+  <div id="product-7" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_red_del.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+  <div id="product-8" class="product col-sm-3">
+    <!--hide me to reveal options-->
+  <a href="index.html"  class ="qty btn btn-primary hideme" type="button" > Login To Add</a>
+  <div class="hidemetoo"></div>
+
+
+    <div class="container apple-container">
+      <div class="col-sm-12">
+      <div><img  class="apple" src="media/img/apple_honey.png"></div>
+      </div>
+      <div class="col-sm-12">
+      <a class="product-title" > Apple</a>
+      </div>
+      <div class="col-sm-12">
+      <span class="product-price" >$0.75</span><span class="each">each</span>
+      </div>
+
+
+      <div class="col-sm-12">
+
+          <div class="col-sm-2">
+          <p class="qty-text"> Qty:</p>
+          </div>
+          <div class="col-sm-4">
+          <button class ="qty btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">1<span class="caret"></span></button>
+          
+          </div>
+
+          <div class="col-sm-6">
+          <a href="" class="more"> More from This Shelf </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="buy-button"> Add to Cart</div>
+      </div>
+      <div class="col-sm-12">
+        <a  class="personal-shopper"> Request for Personal Shopper</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+</div>
+<!--Footer-->
+
+
+<div  class="footer">
+  <div class="row" id="footer-row">
+    <div id="footer-container" class="container page-container">
+      <div class="col-xs-3" id="footer-text">
+       &#169 2016 Greg Longo
+     </div>
+     
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>

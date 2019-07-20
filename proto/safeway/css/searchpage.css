@@ -1,0 +1,219 @@
+body{
+	padding-top: 70px;
+}
+
+#main_search{
+
+		cursor: pointer;
+		height: 30px;
+		margin-left: 10px;
+		margin-top: 15px;
+
+}
+
+#product-search{
+
+	background:transparent;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: white;
+	margin-top: 15px;
+	color: white;
+	padding-top: 10px;
+
+}
+
+#product-search::-webkit-input-placeholder { color: white; opacity: .8 !important; font-size: 18pt; margin-right:20px}
+
+
+
+#search-hero{
+  background: url('../media/img/produce_3.jpeg');
+  height: 350px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  margin-top: -20px;
+  margin-right: -15px;
+
+}
+
+.main-text{
+
+		margin-top: 10%;
+	font-family: futura-medium;
+	font-size: 26pt;
+	text-align: center;
+	color: white;
+}
+
+
+#login{
+
+  background: url('../media/img/login.jpg');
+        background-size: cover;
+  background-position:  top;
+  height: 270px;
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 100px;
+box-shadow: 1px 1px 4px gray;
+border-radius: 5px;
+z-index: 1;
+
+margin-bottom: 40px;
+
+
+}
+
+#banner{
+
+  background: url('../media/img/sale.jpg');
+      background-size: cover;
+  background-position: center top;
+  height:125px;
+  width:650px;
+  margin-top:40px;
+  margin-left:100px;
+box-shadow: 1px 1px 4px gray;
+border-radius: 5px;
+
+
+}
+
+#browse{
+
+  background: url('../media/img/shelfzz.jpg');
+  height:125px;
+  width:650px;
+  margin-top:20px;
+  margin-left:100px;
+box-shadow: 1px 1px 4px gray;
+border-radius: 5px;
+
+}
+
+
+.login-button{
+
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 16pt;
+	color: white;
+	background-color: #E03A3F;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px;
+	padding: 5px;
+	padding-left: 43px;
+	padding-right: 43px;
+	display: inline;
+
+}
+
+#login-header{
+		font-family: futura-medium;
+	font-weight: bold;
+	font-size: 16pt;
+	text-align: right;
+	background-color: #E03A3F;
+	color: white; 
+padding:10px;
+margin-bottom: 25px;
+border-radius: 5px 5px 0px 0px;
+}
+
+
+#username, #pwd{
+
+width: 250px;
+display: inline;
+border-style: none;
+text-align: center;
+
+background: transparent;
+box-shadow: none;
+
+
+}
+
+#userimage{
+
+
+height: 30px;
+display: inline;
+padding-left: 20px;
+padding-right: 20px;
+border-right: #d3d3d3 solid 1px;
+}
+
+.login-form{
+	width: 350px;
+	margin-left: 60px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#login-buttons{
+
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+#login-remember{
+
+	margin-top: 20px;
+	padding-left: 75px;
+
+}
+
+#remember{
+
+	margin-right: 25px;
+
+}
+
+#login-success{
+
+	z-index: 100;
+	background-color: white;
+	position: absolute;
+	width: 500px;
+	height: 270px;
+	right: 0px;
+	border-radius: 5px;
+	text-align: center;
+	visibility: hidden;
+
+
+}
+
+#welcome-text{
+
+	margin-top: 50px;
+	margin-bottom: 40px;
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.bannertext{
+
+		font-family: futura-medium;
+	font-weight: bold;
+	font-size: 20pt;
+	text-align: left;
+	color: white; 
+	margin-left: 40px;
+	margin-top: 50px;
+}
+
+#banners  a{
+
+		text-decoration: none;
+
+
+}

@@ -1,0 +1,367 @@
+
+html, g{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+/* graphs */
+
+.bar {
+    fill: #2e80b5;
+}
+
+.bar:hover{
+    opacity: 1 !important;
+}
+
+.brushbar{
+    opacity: .8;
+fill: #DEDFDD;
+}
+
+.selected-range{
+    fill: #2e80b5;
+}
+
+.line {
+    fill: none;
+    stroke: lightgrey;
+    stroke-width: 2px;
+
+} 
+
+#graph2{
+    position: relative;
+    overflow-y: visible;
+}
+
+#graph, #graph2, #cards {
+    max-width: 1300px;
+}
+
+
+#graph svg {
+    display: block;
+    overflow: visible;
+    position: relative;
+}
+
+
+.yaxis .tick text , .xaxis .tick text{
+    fill: #959695!important;
+    font-weight: 600;}
+
+.yaxis path{
+    opacity: .1;
+}
+
+.yaxis .tick line{
+    opacity: 0;
+}
+
+.xaxis path,.xaxis line {
+    display: none;
+}
+
+.xaxis2 path,.xaxis2 line, .xaxis2 .tick{
+    display: none;
+}
+.xaxis2  .tick:first-of-type {
+    display: block;
+}
+
+.xaxis2  .tick:nth-of-type(16) {
+    display: block;
+}
+
+.x2axis2 path,.x2axis2 line, .x2axis2 .tick{
+    display: none;
+}
+
+.x2axis2  .tick:nth-of-type(16) {
+    display: block;
+}
+.x2axis2  .tick:nth-of-type(45) {
+    display: block;
+}
+.x2axis2  .tick:nth-of-type(76) {
+    display: block;
+}
+
+.xaxis2 text{
+    fill: #959695!important;
+    font-weight: 600;
+}
+
+.x2axis2 text{
+    fill: #959695!important;
+    font-weight: 600;
+
+}
+
+.grid path:first-of-type{
+    opacity: 0;
+}
+
+.grid {
+    stroke-dasharray: 5, 5;
+}
+
+.grid .tick line{
+    opacity: .8;
+    stroke: #DEDEDC;
+    stroke-width: 1px;
+}
+
+.dot{
+    fill: #2e80b5;
+    stroke:  white;
+    stroke-width: 1.7px;
+}
+
+/* title bar / dataset switches */
+
+#ontop{
+    width: 1300px;
+}
+
+.titles{
+    display: inline-block;
+    color: #545453;
+}
+
+.metrics{
+    font-weight: 300;
+    margin-right: 220px;
+    margin-left: 95px;
+    vertical-align: bottom;
+    font-size: 32px;
+    letter-spacing: .5px;
+}
+
+.bignum{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.claims{
+    font-weight: 600;
+    width: 100px;
+    font-size: 10px;
+    letter-spacing: .06em;
+}
+
+.btn-group{
+    float: right;
+    margin-top: 16px;
+}
+
+.btn-group button {
+    background-color: white; 
+    border:none;
+    border-bottom: 2px solid lightgrey; 
+    color: black; 
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left;
+    border-radius: 1px;
+}
+
+.btn-group button:nth-child(2) {
+    border-right: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+
+}
+
+.btn-group button:hover {
+    background-color: whitesmoke;
+}
+
+.btn-group button:focus{
+    outline:0;
+}
+
+.chosen {
+    background-color: lightgrey !important;
+}
+
+
+/* popup bubble text */
+
+
+
+.popup,.triangle{
+    fill: #545453;
+}
+
+.selected-value{
+    fill: white;
+}
+
+.selected-date{
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: .06em;
+/*    color: #CACCCF;
+*/
+    fill:white;
+    opacity: .6;
+}
+
+.selected-closed{
+    letter-spacing: .06em;
+    font-weight: 300;
+    font-size: 10px;
+    fill: white;
+}
+
+
+/* cards */ 
+
+#cards{
+    overflow: hidden;
+}
+
+#cards .cardmat{
+    fill: #494A4B;
+}
+
+.card1 rect{
+    fill: #3E3E3E;
+}
+
+.card1 circle{
+    stroke: #2a2a2a;
+    stroke-width: 12px;
+    fill: #231F20;
+}
+
+.avgsmall{
+    font-weight: 600;
+    font-size: 10px;
+    fill:white;
+    letter-spacing: .5px;
+}
+
+.avgbig{
+    font-weight: 800;
+    font-size: 84px;
+    fill:white;
+}
+
+.closemedium{
+    font-weight: 700;
+    font-size: 18px;
+    fill:white;
+}
+
+.closebig{
+    font-weight: 700;
+    font-size: 33px;
+    fill:white;
+}
+
+.closetiny{
+    font-weight: 300;
+    font-size: 10px;
+    fill:white;
+    max-width: 60px;
+    white-space: wrap;
+    letter-spacing: 1px;
+}
+
+.closedays{
+    font-size: 20px;
+    font-weight: 300;
+    fill: white;
+}
+
+.guagebg{
+    stroke: #2A2A2A;
+    stroke-width: 2px;
+}
+
+.guagefg{
+    stroke: #2e80b5;
+    stroke-width: 2px;
+}
+
+
+.piecard{
+    fill: #3E3E3E;
+    transition: all 200ms ;
+    cursor: pointer;
+}
+
+.pieback{
+    fill: #2A2A2A;
+}
+
+.piefront{
+    fill: #2e80b5;
+}
+
+.piecard:hover rect{
+    fill: #2e80b5;
+}
+
+.piecard:hover .pieback{
+    fill: #0A607C !important;
+}
+
+.piecard:hover .piefront{
+    fill: white !important;
+}
+
+.piecard:hover .closebig{
+    font-size: 46px !important;
+}
+
+.piecard:hover .avgsmall{
+    font-size: 16px !important;
+    font-weight: 400;
+}
+
+.piecard:hover line:first-of-type{
+    stroke: #0A607C;
+}
+
+.piecard:hover line:last-of-type{
+    stroke: white;
+}
+
+.piecard1:hover .closedays{
+        transform:  translate(336px , 92px);
+}
+
+.piecard2:hover .closedays{
+        transform:  translate(702px , 92px);
+}
+
+.piecard3:hover .closedays{
+        transform:  translate(1068px , 92px);
+}
+
+#cards .piecard1:hover{
+        transform: scale(1.2) translate(-34px , -16px);
+}
+
+#cards .piecard1:hover + .piecard2{
+        transform:  translate(70px , 0);
+}
+
+#cards .piecard1:hover ~ .piecard3{
+        transform:  translate(70px , 0);
+}
+
+#cards .piecard2:hover{
+        transform: scale(1.2) translate(-96px , -16px);
+}
+
+#cards .piecard2:hover + .piecard3{
+        transform:  translate(72px , 0);
+}
+

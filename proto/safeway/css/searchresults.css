@@ -1,0 +1,410 @@
+body{
+
+	padding-top: 70px;
+
+}
+
+
+.product{
+
+	height:325px;
+	width: 257px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #E03A3F!important;
+	border-width: 2px !important;
+	box-shadow: 1px 1px 2px #999;
+	padding: 0px;
+	background-color: white;
+}
+
+#allthethings{
+
+	padding: 0px !important;
+	width: 100% !important;
+
+
+}
+
+#filter-menu{
+
+	background-color: #E03A3F;
+	height: 785px;
+	width:260px;
+	z-index: 0;
+	box-shadow: 2px 2px 3px #999;
+	padding: 0px;
+	margin-top: -20px;
+
+
+}
+
+
+#results{
+
+margin-bottom: 40px;
+margin-top:20px;
+margin-right: 35px;
+
+
+}
+
+#sidebar-header{
+
+	font-family: futura-medium;
+	font-size: 18pt;
+	color: white;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+
+}
+
+
+.filters{
+
+  list-style-type: none;
+  color: #E03A3F;
+
+}
+.filters li{
+  cursor: pointer;
+}
+
+.my-heading{
+
+	background-color: #E03A3F !important;
+    border-style: none !important;
+    color: white!important;
+    padding-left: 20px;
+    	    border-radius: 0px !important;
+
+
+}
+
+.my-heading a{
+
+	text-decoration: none !important;
+		font-family: futura-medium;
+
+
+}
+
+.my-heading a:hover{
+
+    text-decoration: none !important;
+    color: #FFA600!important;
+
+}
+
+.my-panel{
+
+	    border-style: none !important;
+	    box-shadow: none;
+	    border-radius: 0px !important;
+}
+
+
+.panel-collapse{
+	border-radius: 0px !important;
+}
+
+.selected{
+
+    color: #FFA600!important;
+
+
+}
+
+.apple{
+
+	height: 115px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+
+
+}
+
+.apple-container{
+
+		text-align: center;
+		padding: 0px;
+		position: absolute;
+
+}
+
+.product-title{
+	
+	font-weight: bold;
+	font-size: 16pt;
+	color: #636363;
+	text-decoration: none;
+	margin-bottom: 50px !important;
+
+
+}
+
+.product-price{
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 16pt;
+	color: #E03A3F;
+	text-decoration: none;	
+
+
+}
+
+.each{
+
+	font-family: futura-medium;
+		font-size: 10pt;
+			color: grey;
+
+}
+
+.buy-button{
+
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 16pt;
+	color: white;
+	background-color: #E03A3F;
+	border-radius: 10px;
+	cursor: pointer;
+	margin: 10px;
+
+}
+
+.more {
+
+	font-size: 12px !important;
+	line-height: 0 !important;
+}
+
+.qty-text{
+
+	color: #636363;
+	margin-top: 10px;
+
+}
+
+.qty{
+
+	background: transparent;
+	border-width: 2px;
+	border-color: #E03A3F;
+	color: #E03A3F;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-top: 8px;
+}
+
+
+.caret{
+	margin-left: 10px !important;
+	color: #E03A3F;
+
+}
+
+.qty:hover{
+
+		background: #E03A3F;;
+		color: white;
+		border-color: #E03A3F;
+
+
+}
+
+.qty:hover .caret{
+
+		color: white;
+}
+
+.open > .dropdown-toggle.btn-primary{
+		background: #E03A3F !important;
+		color: white;
+		border-color: #E03A3F !important;
+
+}
+
+.open > .dropdown-toggle.btn-primary .caret{
+
+		color: white;
+}
+
+
+.hideme{
+
+	height: 50px;
+	width: 215px;
+	background-color: white;
+	border-color: #E03A3F;
+	border-width: 3px;
+	z-index: 100;
+	position: absolute;
+	top: 220px;
+	left: 20px;
+	font-size: 20pt;
+	padding: 5px;
+}
+
+
+.hidemetoo{
+
+	height: 105px;
+	width: 205px;
+	background-color: white;
+	z-index: 99;
+	position: absolute;
+	top: 205px;
+	left: 20px;
+	padding: 5px;
+}
+
+
+.results-header{
+
+	background-color: white;
+	padding: 10px;
+	padding-top: 15px;
+	box-shadow: 1px 1px 2px #999;
+	height: 55px;
+	margin-top: -20px;
+
+}
+
+#yousearchedfor{
+
+	font-size: 16pt;
+	margin-left: 50px;
+	color: #d3d3d3
+	}
+
+.modal-content{
+
+	top: 100px;
+	height:400px;
+
+
+}
+
+.modal-info{
+
+			text-align: right;
+				padding-right: 30px !important;
+				padding-top: 20px ;
+
+
+}
+
+.infocard{
+
+	border: solid .5px #999;
+
+	border-radius:  7px;
+
+	margin-top:10px;
+
+		margin-right: -15px;
+
+}
+
+
+
+.more-header{
+
+		font-family: futura-medium;
+	font-weight: bold;
+	font-size: 14pt;
+	text-align: right;
+	background-color: #E03A3F;
+	color: white; 
+padding:5px;
+padding-right: 20px;
+border-radius: 5px 5px 0px 0px;
+}
+
+.details-header{
+
+	border-radius: 0px !important;
+
+
+}
+
+.quick-apple{
+
+	height: 250px;
+	margin-top: 75px;
+		margin-left: -15px ;
+
+
+
+
+}
+
+.modal-title{
+	
+	font-weight: bold;
+	font-size: 18pt;
+	color: #636363;
+	text-decoration: none;
+	margin-bottom: 10px !important;
+
+
+}
+
+.modal-price{
+	font-family: futura-medium;
+	font-weight: bold;
+	font-size: 18pt;
+	color: #E03A3F;
+	text-decoration: none;	
+}
+
+.modal-each{
+
+	font-family: futura-medium;
+		font-size: 12pt;
+			color: grey;
+
+}
+
+.stuff{
+
+	padding: 5px;
+}
+
+
+.quickview{
+
+
+	position: absolute;
+
+	-webkit-transition: opacity .5s linear;
+	margin-left: 30px !important;
+		margin-top: 10px !important;
+
+
+}
+
+
+
+
+.quickview:hover{
+
+opacity: .6 !important;
+
+}
+
+.quickview:focus{
+	border-style: none;
+	box-shadow: none;	
+	outline: none;
+}
+
+
+
+

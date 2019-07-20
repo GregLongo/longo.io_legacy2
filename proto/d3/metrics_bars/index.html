@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="ontop"> 
+	<div class="titles metrics">Metrics By Day</div>
+	<div class="titles bignum">394</div>
+	<div class="titles claims">	Data points from the Past 30 days</div>
+	<div class="titles btn-group">
+	  <button class="button chosen" id="average" >Average</button>
+	  <button class="button " id="total" >Total</button>
+	  <button class="button" id="trend" >Trend</button>
+	</div>
+</div>
+<div id="graph"> </div>
+<div id="graph2"> </div>
+<div id="cards"></div>
+
+<script src="metrics.js"></script>
+
+</body>
+</html>

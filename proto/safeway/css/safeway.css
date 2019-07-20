@@ -1,0 +1,107 @@
+body{
+
+	background-color: #f2f2f2;
+    min-width: 1440px;
+
+}
+
+.wrapper{
+	min-height:100%;
+	position: relative;
+    height: auto !important;
+	margin-bottom: -75px;
+	height: 100%;
+}
+
+
+
+
+#safeway-nav{
+
+    box-shadow: 0 6px 6px -6px #999;
+    border: none;
+    border-radius: 0;
+    }
+
+
+
+
+#logo{
+
+	height:40px;
+	margin-top: -5px;
+	margin-left: 20px;
+}
+
+.menu-item{
+	margin-top:5px;
+	font-family: futura-medium;
+	color: #E03A3F!important;
+}
+
+.menu-item:hover
+{
+	color: #FFA600!important;
+}
+
+#safeway-nav{
+
+background-color: white;
+z-index: 100;
+
+}
+
+#cart{
+	margin-top: 5px;
+
+	height: 25px;
+	margin-right:20px;
+}
+#cart:hover{
+
+	filter: hue-rotate(67deg) saturate(10);
+}
+
+
+#searchbox{
+	margin-top: 7px;
+	border-width: 2px;
+	border-color: #E03A3F;
+	font-color: #E03A3F!important;
+	height:30px;
+}
+#search{
+	margin-top: 7px;
+
+	height: 25px;
+}
+#search:hover{
+
+	filter: hue-rotate(67deg) saturate(10);
+}
+
+
+.my-btn{
+
+	background: none;
+	border: none;
+}
+
+hr{
+	margin-top: 0!important;
+	margin-bottom: 0 !important;
+}
+ 
+.footer{
+	padding-top: 25px;
+	margin-right: -20px !important;
+	width: 100%; 
+   border-top: solid 2px  #E03A3F;
+    background-color: white;
+    height: 75px;
+
+}
+
+.push{
+	height:85px;
+}

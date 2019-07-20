@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1-Copy" sketch:type="MSArtboardGroup" stroke="#E0E0E0" stroke-width="5">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(7.000000, 8.000000)">
+                <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="0" y="0" width="103" height="104" rx="6"></rect>
+                <rect id="Rectangle-2" sketch:type="MSShapeGroup" x="49" y="17" width="42" height="33" rx="2"></rect>
+                <rect id="Rectangle-2-Copy" sketch:type="MSShapeGroup" x="10" y="60" width="33" height="31" rx="40"></rect>
+                <path d="M12.9990234,19.5 L40.9990234,19.5" id="Path-2" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M12.9990234,33.5 L40.9990234,33.5" id="Path-2-Copy" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M12.9990234,47.5 L40.9990234,47.5" id="Path-2-Copy-2" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M52,62.5 L88.5,62.5" id="Path-2-Copy-3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M52,74.5 L88.5,74.5" id="Path-2-Copy-4" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M52,86.5 L88.5,86.5" id="Path-2-Copy-5" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M53.4995117,20.875 L87.8745117,46.75" id="Path-8" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M53.4995117,20.875 L87.8745117,46.75" id="Path-8-Copy" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(70.687012, 33.812500) scale(-1, 1) translate(-70.687012, -33.812500) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
